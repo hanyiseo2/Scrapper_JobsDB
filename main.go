@@ -21,7 +21,6 @@ func handleScrape(c echo.Context) error {
 }
 
 func main(){
-	scrapper.Scrape("python")
 	e := echo.New()
 	e.GET("/",handleHome)
 	e.POST("/scrape", handleScrape)
